@@ -1,0 +1,22 @@
+@import "../styles/utils/colors";
+
+.card {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  .card-label {
+    font-weight: 700;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 5px;
+    ::after {
+      content: "";
+      margin-top: 16px;
+      display: block;
+      border-bottom: 1px solid $gray-2;
+    }
+  }
+}
+.card-rating {
+  color: $yellow;
+}

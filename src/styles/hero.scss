@@ -1,0 +1,36 @@
+@import "../styles/utils/colors";
+
+.hero {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-color: $black;
+  background-image: linear-gradient($rgba-gray-1, $rgba-gray-1),
+    url("/../images/hero.jpg");
+  .hero_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    .hero_title {
+      color: $white;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    .hero_subtitle {
+      color: $white;
+      margin-top: 16px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

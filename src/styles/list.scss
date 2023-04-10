@@ -1,0 +1,72 @@
+@import "../styles/utils/colors";
+
+.lists {
+  margin: 0 auto;
+  text-align: left;
+  display: grid;
+  grid-row-gap: 20px;
+  .list-item {
+    box-shadow: 0 4px 8px 0 $black-shadow;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    a {
+      text-decoration: none;
+      color: $black;
+      cursor: pointer;
+      .list-thumbnail {
+        position: relative;
+        .list-item-thumbnail {
+          width: 100%;
+          height: 200px;
+          background-size: cover;
+          object-fit: cover;
+          object-position: center;
+        }
+        .list-city {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-weight: 500;
+          padding: 18px 15px 18px;
+          border-radius: 0 0 10px;
+          color: $white;
+          background-color: $yellow;
+        }
+      }
+      .list-item-content {
+        padding: 16px;
+        .list-item-restaurant {
+          font-size: 1em;
+          color: $gray-1;
+          text-decoration: none;
+        }
+        .list-item-title {
+          font-weight: 500;
+          margin-top: 10px;
+          font-size: 1rem;
+          transition: 0.3s opacity;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+        .list-item-description {
+          margin-top: 5px;
+          font-size: 12px;
+          line-height: 1.5em;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+  .list-item:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: transform 0.5s ease;
+  }
+}

@@ -1,0 +1,162 @@
+@import "../styles/utils/colors";
+
+.detail {
+  margin-top: 0;
+  .restaurant-picture {
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+  }
+  .detailRestaurant-header {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    background-color: $gray-3;
+    .detailRestaurant-info {
+      height: 100%;
+      width: 100%;
+      font-size: 1em;
+      padding: 1em;
+      h2 {
+        margin-top: 10px;
+        font-size: 1em;
+        text-align: left;
+      }
+      .restaurant-description {
+        font-size: 14px;
+        text-align: justify;
+      }
+    }
+    .detailRestaurant {
+      height: 100%;
+      width: 100%;
+      padding: 1em;
+      text-align: left;
+      h2 {
+        margin-top: 10px;
+        font-size: 1em;
+      }
+      p {
+        font-size: 14px;
+      }
+      .restaurant-categories {
+        text-align: left;
+        .restaurant-categories-title {
+          margin-top: 5px;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+.detailRestaurant-menu {
+  border-bottom: 1px solid $black;
+  margin-top: 20px;
+  padding: 1em;
+  h2 {
+    font-size: 1em;
+  }
+  .restaurant-menu {
+    text-align: left;
+    ol {
+      margin: 0;
+      h3 {
+        margin-top: 10px;
+        text-align: left;
+        font-size: 1em;
+      }
+      li {
+        list-style-type: none;
+        text-align: left;
+      }
+    }
+  }
+}
+.review-title {
+  margin-top: 50px;
+  padding: 0 0 0 1em;
+  font-size: 1em;
+}
+.detailRestaurant-review {
+  margin-top: 5px;
+  .restaurant-review {
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 $black-shadow;
+    transition: transform 0.5s ease;
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      // border-bottom: 1px solid $black;
+      padding: 10px;
+      .review-name {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+      }
+      .review-date {
+        font-size: 14px;
+      }
+    }
+    .review-comment {
+      font-size: 14px;
+      text-align: left;
+      padding: 10px;
+    }
+  }
+}
+.form-review {
+  padding: 10px 20px;
+  border: 1px solid $black;
+  border-radius: 5px;
+  h2 {
+    font-size: 1em;
+    padding-bottom: 10px;
+  }
+  .form-group {
+    font-size: 14px;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 10px;
+    .form-control {
+      width: 80%;
+      padding: 5px;
+      margin: 5px;
+      font-size: 14px;
+      min-height: 44px;
+    }
+    .submitReview {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $black;
+      background-color: $white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .submitReview:hover {
+      border: 1px solid $yellow;
+      background-color: $yellow;
+      box-shadow: 0 4px 8px 0 $black-shadow;
+      // transition: transform 0.5s ease;
+    }
+  }
+}
+.like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  font-size: 18px;
+  bottom: 16px;
+  right: 16px;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  color: $red;
+  background-color: $white;
+  border-radius: 50%;
+  border: 1px solid $red;
+}

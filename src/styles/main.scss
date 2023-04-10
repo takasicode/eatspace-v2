@@ -1,0 +1,44 @@
+@import "../styles/utils/colors";
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-track {
+  background: $white;
+}
+html::-webkit-scrollbar-thumb {
+  background: $yellow;
+}
+.skip-link {
+  left: 0;
+  top: -100px;
+  color: $white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
+  background-color: $red;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 100px;
+  transition: all 0.5s;
+}
+.content {
+  padding: 60px 32px;
+  margin: 0 auto;
+}
+main {
+  max-width: 1200px;
+}
