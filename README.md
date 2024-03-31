@@ -9,7 +9,7 @@ Clone the project
 
 Go to the project directory
 ```bash
-  cd eatspace-v1
+  cd eatspace-v2
 ```
 
 Install dependencies
@@ -36,4 +36,4 @@ Favorites Page
 ![App Screenshot](./src/public/images/screenshot/screencapture-favorites.png)
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=html,sass,js,nodejs,npm,webpack)](https://github.com/takasicode/eatspace-v1)
+[![My Skills](https://skillicons.dev/icons?i=html,sass,js,nodejs,npm,webpack)](https://github.com/takasicode/eatspace-v2)
